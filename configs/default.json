@@ -1,0 +1,16 @@
+{
+  "data_dir": "data/raw",
+  "output_dir": "models/40X",
+  "magnification": "40",
+  "seed": 42,
+  "image_size": [224, 340],
+  "crop_size": [224, 224],
+  "batch_size": 128,
+  "train_fraction": 0.7,
+  "validation_fraction": 0.1,
+  "test_fraction": 0.2,
+  "epochs_per_stage": 50,
+  "patience": 10,
+  "weights": "imagenet",
+  "stages": [[], ["block3"], ["block2", "block3"], ["block1", "block2", "block3"]]
+}
